@@ -1,0 +1,8 @@
+{
+  "name": "stock-paper-analyzer",
+  "description": "Analyze academic papers on portfolio theory, stock selection, and asset class management. Extract tradeable signals, synthesize multi-paper strategies, and backtest them against real historical data with full performance analytics.",
+  "version": "1.0.0",
+  "author": {
+    "name": "badeshachandan-create"
+  }
+}

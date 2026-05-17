@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "financial-data": {
+      "command": "python3",
+      "args": ["mcp/financial-data/server.py"],
+      "env": {
+        "FRED_API_KEY": "${FRED_API_KEY:-}",
+        "ALPHA_VANTAGE_KEY": "${ALPHA_VANTAGE_KEY:-}",
+        "FMP_API_KEY": "${FMP_API_KEY:-}"
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${HOME}/stock-analyzer-results"]
+    }
+  }
+}
